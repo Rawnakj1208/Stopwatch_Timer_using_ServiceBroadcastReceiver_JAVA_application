@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".TIMER">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10sp"
+        android:text="00:00:00"
+       android:layout_centerInParent="true"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_alignParentLeft="true"
+        android:backgroundTint="#03A9F4"
+        android:text="start"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1"
+        android:backgroundTint="#03A9F4"
+        android:text="stop"
+        android:textSize="20sp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pause"
+        android:textSize="20sp"
+        android:backgroundTint="#03A9F4"
+        android:layout_below="@+id/btn2"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btn1"
+        android:layout_marginRight="50dp"        />
+
+
+</RelativeLayout>
